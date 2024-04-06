@@ -3,7 +3,7 @@ body {
     background-color: rgb(224, 232, 255);
     background-repeat: no-repeat;
     background-size: contain;
-    height: 130vh;
+    height: 100vh;
     display: grid;
     place-items: center;
 }
