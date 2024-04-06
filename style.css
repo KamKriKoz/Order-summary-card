@@ -1,0 +1,183 @@
+body {
+    background: url(./images/pattern-background-desktop.svg);
+    background-color: rgb(224, 232, 255);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 130vh;
+    display: grid;
+    place-items: center;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Red Hat Display";
+    font-weight: 900;
+    font-size: 1.3rem;
+    padding-top: 1.3rem;
+}
+
+h2 {
+    font-family: "Red Hat Display";
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 0;
+}
+
+button {
+    text-align: center;
+    font-size: 16px;
+    font-family: "Red Hat Display";
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.box {
+    background-color: white;
+    display: grid;
+    place-items: center;
+    border-radius: 20px;
+    margin: 0;
+    padding: 0;
+    width: 28rem;
+    overflow: hidden;
+}
+
+.img {
+    padding: 18px;
+}
+
+.plan-rectangle {
+    display: inline-flex;
+    background-color: rgb(245, 247, 255);
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-between;
+    width: 360px;
+    margin-top: 10px;
+}
+
+.plan-details {
+    display: inline-flex;
+    flex-direction: column;
+    flex-basis: 100%;
+}
+
+.final-choice {
+    display: inline-flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    gap: 10px;
+}
+
+.proceed {
+    border: 0;
+    width: 360px;
+    height: 45px;
+    color: white;
+    font-weight: 700;
+    box-shadow: 0 15px 20px 0 rgb(177, 175, 206);
+    background-color: rgb(56, 41, 224);
+    opacity: 1;
+}
+
+.proceed:hover {
+    opacity: 0.8;
+}
+
+.cancel {
+    background-color: transparent;
+    border: 0;
+    width: 360px;
+    height: 45px;
+    color: rgb(114, 128, 167);
+    opacity: 0.4;
+    font-weight: 700;
+}
+
+.cancel:hover {
+    opacity: 1;
+}
+
+.summary p {
+    text-align: center;
+    width: 20rem;
+    font-size: 16px;
+    font-family: "Red Hat Display";
+}
+
+.plan-details p {
+    font-size: 16px;
+    font-family: "Red Hat Display";
+    margin: 0;
+}
+
+.plan-rectangle button {
+    background-color: transparent;
+    border: 0;
+    padding: 18px;
+    font-size: 14px;
+}
+
+.plan-rectangle button:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+
+    body {
+        height: 100vh;
+    }
+        
+    .summary p {
+        width: 16rem;
+    }
+    
+    .plan-details p {
+        font-size: 16px;
+        font-family: "Red Hat Display";
+        margin: 0;
+    }
+    
+    .plan-rectangle button {
+        background-color: transparent;
+        border: 0;
+        padding: 18px;
+        font-size: 14px;
+    }
+        
+    .box {
+        width: 22rem;
+        height: 35rem;
+    }
+
+    .main-img {
+        width: 100%;
+    }
+    
+    .img {
+        padding: 15px;
+    }
+    
+    .plan-rectangle {
+        width: 300px;
+    }
+        
+    .final-choice {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        gap: 10px;
+        align-items: center;
+    }
+    
+    .proceed {
+        width: 300px;
+        height: 50px;
+    }
+    
+    .cancel {
+        width: 300px;
+        height: 50px;
+    }
+}
